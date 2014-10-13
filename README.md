@@ -1,6 +1,10 @@
-Blame Calculus
+Blame-Core
 ==============
-A simple implementation of Blame calculus in JavaScript.
+JavaScript wrapper for checking types dynamically. Using Proxies and WeakMaps from EcmaScript 6. Based on Blame Calculus.
+
+Blame Calculus
+--------------
+What is blame calculus
 
 Notice
 ------
