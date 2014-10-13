@@ -1,6 +1,6 @@
 {
   "name": "Blame",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Dynamic type checking system for JavaScript",
   "main": "build/blame.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "harmony-reflect": "1.0.x",
+    "harmony-reflect": "1.0.x"
   },
   "devDependencies": {
     "chai": "1.9.x",
@@ -24,6 +24,6 @@
     "karma-mocha": "0.1.x",
     "karma-osx-reporter": "0.1.x",
     "mocha": "1.20.x",
-    "typescript": "1.0.x",
+    "typescript": "1.0.x"
   }
 }
