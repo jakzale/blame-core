@@ -14,6 +14,6 @@ TODO
 ----
 1. Add *useful* information to this Readme
 2. Give pointers on compiling node with harmony flags on by default
-4. Fix stuff:
+3. Fix stuff:
     - Fix the model for overloaded functions
-
+4. Find a *better* way of integrating with karma -- the current way is sufficient for small projects, but for larger projects it might be troublesome.
