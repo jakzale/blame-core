@@ -1,6 +1,6 @@
-// Blame
-
-// Loading harmony reflect
+// This is potentially dangerous
+// Shadowing the require keyword with a function
+declare var require: (string) => any;
 if (typeof Proxy !== "function") {
   require("harmony-reflect");
 }
