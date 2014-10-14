@@ -10,8 +10,9 @@ var unused = empty,
 
 used(unused);
 
-var blame = require('../../build/blame.js');
-var expect = require('chai').expect;
+var blame = require('../build/blame.js');
+// var expect = require('chai').expect;
+var expect = chai.expect;
 
 var wrap = blame.wrap,
 label = blame.label,

@@ -10,22 +10,15 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha'],
+    frameworks: ['mocha', 'commonjs'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'node_modules/typescript/bin/typescript.js',
-      'lib/libd.js',
-      // Loading libraries to test:
-      'bower_components/routie/dist/routie.js',
-      'bower_components/platform/platform.js',
-      'bower_components/mustache/mustache.js',
-      //'bower_components/raphael/raphael.js',
-      //'bower_components/nprogress/nprogress.js',
-      'lib/date.format.js',
+      'node_modules/chai/chai.js',
       // Loading test cases
-      'test/gen/bundle-tests.js'
+      'build/**/*.js',
+      'test/**/*.js'
     ],
 
 
@@ -38,6 +31,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'build/**/*.js' : ['commonjs'],
+      'test/**/*.js' : ['commonjs']
     },
 
 
