@@ -1,3 +1,7 @@
+
+[ ![Codeship Status for jakzale/blame-core](https://codeship.io/projects/8e6c6a30-3826-0132-6f33-4e7a21b2ccbb/status)](https://codeship.io/projects/41913)
+
+
 Blame-Core
 ==============
 JavaScript wrapper for checking types dynamically. Using Proxies and WeakMaps from EcmaScript 6. Based on Blame Calculus.
