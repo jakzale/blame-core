@@ -16,7 +16,7 @@
     "chai": "1.9.x",
     "del": "0.1.x",
     "gulp": "3.8.x",
-    "gulp-mocha": "0.5.x",
+    "gulp-mocha": "1.1.x",
     "gulp-shell": "0.2.x",
     "karma": "0.12.x",
     "karma-commonjs": "0.0.12",

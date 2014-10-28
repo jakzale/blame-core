@@ -5,12 +5,14 @@
 var gulp  = require('gulp'),
     shell = require('gulp-shell'),
     del   = require('del'),
+    mocha = require('gulp-mocha'),
     karma = require('karma').server,
     paths;
 
 paths = {
   src: 'src/*.ts',
   build: 'build',
+  test: 'test/**/*.js',
   config: __dirname + '/karma.conf.js'
 };
 
@@ -44,7 +46,7 @@ gulp.task('karma', ['build'], function() {
 
 gulp.task('default', ['watch', 'karma']);
 
-// Run single test with gulp
+// Run a single test with gulp
 gulp.task('test', ['build'], function() {
   karma.start({
     configFile: paths.config,
@@ -52,5 +54,10 @@ gulp.task('test', ['build'], function() {
     reporters: ['dots']
   });
 });
+
+// Run a single mocha test with gulp
+gulp.task('mocha', ['build'], function() {
+  return gulp.src(paths.test, {read: false})
+    .pipe(mocha({reporter: 'dot'})); });
 
 // vim: set ts=2 sw=2 sts=2 et :
