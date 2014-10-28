@@ -1,5 +1,5 @@
-/*global describe, it, define */
-/*jslint indent: 2, todo: true */
+/*global describe, it, define, chai */
+/*jslint indent: 2, todo: true, node: true */
 'use strict';
 
 
@@ -11,8 +11,15 @@ var unused = empty,
 used(unused);
 
 var blame = require('../build/blame.js');
-// var expect = require('chai').expect;
-var expect = chai.expect;
+
+// Loading expect from chai
+var expect;
+if (typeof chai === 'undefined') {
+  // Load chai and get expect
+  expect = require('chai').expect;
+} else {
+  expect = chai.expect;
+}
 
 var wrap = blame.wrap,
 label = blame.label,
