@@ -10,7 +10,8 @@ var gulp  = require('gulp'),
 
 paths = {
   src: 'src/*.ts',
-  build: 'build'
+  build: 'build',
+  config: __dirname + '/karma.conf.js'
 };
 
 gulp.task('clean', function(cb) {
@@ -37,12 +38,19 @@ gulp.task('watch', function() {
 // Secondly, there is a potential of many cache invalidations
 gulp.task('karma', ['build'], function() {
   karma.start({
-    configFile: __dirname + '/karma.conf.js',
+    configFile: paths.config
   });
 });
 
 gulp.task('default', ['watch', 'karma']);
 
-
+// Run single test with gulp
+gulp.task('test', ['build'], function() {
+  karma.start({
+    configFile: paths.config,
+    singleRun: true,
+    reporters: ['dots']
+  });
+});
 
 // vim: set ts=2 sw=2 sts=2 et :
