@@ -11,7 +11,7 @@ Because the model for overloaded functions needs to be updated, generating wrapp
 - [Usage](#usage)
 
 # Blame-Core
-JavaScript wrapper for checking types at runtime. Depends on Proxies and WeakMaps for EcmaScript 6.  Based on Polymorphic Blame Calculus.
+JavaScript wrapper for checking types at runtime.  Depends on Proxies and WeakMaps for EcmaScript 6.  Based on Polymorphic Blame Calculus.
 
 
 ## Requirements
@@ -36,10 +36,11 @@ $ brew install --build-from-source https://raw.githubusercontent.com/jakzale/bla
 
 ## Polymorphic Blame Calculus
 
-No worries, just theoretical foundation to show that what is being done is not nonsense. For more details consult relevant [papers](http://homepages.inf.ed.ac.uk/wadler/topics/blame.html).
+No worries, just theoretical foundation to show that what is being done is not nonsense.  For more details consult relevant [papers](http://homepages.inf.ed.ac.uk/wadler/topics/blame.html).
 
 # Usage
 
+**List basic usage here**
 
 
 TODO
